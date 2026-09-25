@@ -1,0 +1,25 @@
+# Clinical Data — never commit raw sensitive patient data
+data/raw/*
+!data/raw/.gitkeep
+
+# Python virtual environment & cache
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# PyCaret / MLflow tracking & logs
+mlruns/
+logs.log
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

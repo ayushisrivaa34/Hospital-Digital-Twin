@@ -1,0 +1,10 @@
+pycaret[full]>=3.0
+simpy>=4.1
+pandas
+numpy
+matplotlib
+mlflow
+streamlit
+plotly
+scipy
+scikit-learn

@@ -1,0 +1,19 @@
+Hospital Digital Twin — Validation Report
+==================================================
+
+KS Test Results:
+  ks_statistic: 0.1323
+  p_value: 0.3789
+  simulated_mean_los: 9.27
+  actual_mean_los: 9.81
+  simulated_median_los: 8.69
+  actual_median_los: 9.44
+  interpretation: PASS — Cannot reject null hypothesis that distributions are the same (p=0.3789 > 0.05). Simulation LOS distribution is consistent with historical data.
+
+Sensitivity Analysis:
+ total_patients  avg_los_days  avg_wait_hours  mortality_rate  throughput_per_day  bed_occupancy  discharged  expired    scenario  arrival_rate
+             49          9.27          105.56          0.3673                 1.6         0.7571          31       18    baseline           2.0
+             49          9.24          102.06          0.3061                 1.6         0.7543          34       15 minus_20pct           2.4
+             51          9.38           99.71          0.4118                 1.7         0.7970          30       21  plus_20pct           1.6
+
+Plausibility: PASS
